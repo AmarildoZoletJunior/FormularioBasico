@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container{
+    width: 350px;
+    max-width: 100%;
+    height: 450px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.titulo{
+    background-color: skyblue;
+  padding: 8px;
+  text-align: center;
+}
+
+.form-control{
+    padding-bottom: 5px;
+    position: relative;
+}
+.form-control input{
+    border: 2px solid black;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 5px;
+}
+.form-control i:not(.fa-eye){
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    visibility: hidden;
+} 
+.form-control i.fa-regular{
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.form-control label{
+    display: inline-block;
+    /* margin: 2px; */
+}
+.form-control small{
+    font-size: 10px;
+    visibility: hidden;
+}
+.formulario{
+    padding: 0px 20px 20px 20px;
+}
+.formulario button{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    font: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    margin-top:5px;
+}
+.form-control.error i.fa-exclamation{
+    visibility: visible;
+    color:red;
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control.error input:focus{
+    border-color: red;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.form-control.error small{
+    color: red;
+    font-size: 12px;
+    visibility: visible;
+}
+.form-control.sucess i.fa-check-double{
+    visibility: visible;
+    color:greenyellow;
+}
+.form-control.sucess input{
+    border-color: greenyellow;
+}
+.form-control.sucess input:focus{
+    border-color: greenyellow;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}

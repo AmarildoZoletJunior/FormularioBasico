@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Formulario com validação</title>
+</head>
+<body>
+    <div class="container">
+        <!-- titulo -->
+        <div class="titulo">
+            <h2>Crie sua conta</h2>
+        </div>
+
+        <form action="" class="formulario">
+        <!-- começo formulario -->
+        <div class="form-control">
+            <label for="">Nome</label>
+            <input type="text" class="nome">            
+            <i class="fa-solid fa-exclamation"></i>
+            <i class="fa-solid fa-check-double"></i>
+            <small>Mensagem de erro</small>
+        </div>
+        <div class="form-control">
+            <label for="">Email</label>
+            <input type="text" class="email">
+            <i class="fa-solid fa-exclamation"></i>
+            <i class="fa-solid fa-check-double"></i>
+            <small>Mensagem de erro</small>
+        </div>
+        <div class="form-control">
+            <label for="">Senha</label>
+            <input type="password" class="senha">
+            <i class="fa-regular fa-eye" id="passw"></i>
+            <i class="fa-solid fa-exclamation"></i>
+            <i class="fa-solid fa-check-double"></i>
+            <small>Mensagem de erro</small>
+        </div>
+        <div class="form-control">
+            <label for="">Confirmar Senha</label>
+            <input type="password" class="confirm">
+            <i class="fa-regular fa-eye" id="conf"></i>
+            <i class="fa-solid fa-exclamation"></i>
+            <i class="fa-solid fa-check-double"></i>
+            <small>Mensagem de erro</small>
+        </div>
+        <button type="submit" class="sub">Enviar</button>
+    </form>
+</div>
+    <script src="https://kit.fontawesome.com/bb1f2add40.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
